@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite | Bewerbung</title>
+    <link rel="stylesheet"  href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <div class = "header bg-opacity-50 bg-dark text-light  rounded-3">
+        <h1 class="navbar  px-5 mb-5 mt-3 pt-5">
+            Bewerbung um eine Praktikumsstelle
+        </h1>
+        <h2 class="info">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link text-light px-5 mb-4" href="info.html">Anschreiben</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light px-5 mb-4" href="lebenslauf.html">Lebenslauf | Über mich</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light px-5 mb-4" href="kontakt.html">Kontakt</a>
+                </li>
+                
+              </ul>        
+            </h2>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        
+          <script>
+            $(document).ready(function () {
+        
+              // hide #nach_oben first
+              $("#nach_oben").hide();
+        
+              // fade in #nach_oben
+              $(function () {
+                $(window).scroll(function () {
+                  if ($(this).scrollTop() > 300) {
+                    $('#nach_oben').fadeIn();
+                  } else {
+                    $('#nach_oben').fadeOut();
+                  }
+                });
+        
+                // scroll body to 0px on click
+                $('#nach_oben a').click(function () {
+                  $('body,html').animate({
+                    scrollTop: 0
+                  }, 800);
+                  return false;
+                });
+              });
+        
+            });
+          </script>
+        
+          <p id="nach_oben">
+            <a href="#top">nach Oben</a>
+          </p>
+    </div>
+</body>
+</html>
