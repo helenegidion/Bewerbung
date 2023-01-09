@@ -17,7 +17,10 @@
 </head>
 
 <body>
-    <div class="anschreiben bg-opacity-75 bg-light text-dark px-10 mb-5 pt-5 pb-5">
+    <div>
+    <a href="javascript:history.back()" class="btn btn-outline-secondary" style="margin-top: 50px; margin-left: 10%;">Zurück</a>
+    <div class="anschreiben bg-opacity-75 bg-light text-dark px-10 mb-5 pt-3 pb-5">
+        
         <h2 class="fs-3">Anschreiben <br>
         für ein</h2>
         <h3 class="fs-3">Praktikum in Richtung Anwendungsentwicklung</h3>
@@ -53,6 +56,45 @@
 
         </p>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        
+          <script>
+            $(document).ready(function () {
+        
+              // hide #nach_oben first
+              $("#nach_oben").hide();
+        
+              // fade in #nach_oben
+              $(function () {
+                $(window).scroll(function () {
+                  if ($(this).scrollTop() > 300) {
+                    $('#nach_oben').fadeIn();
+                  } else {
+                    $('#nach_oben').fadeOut();
+                  }
+                });
+        
+                // scroll body to 0px on click
+                $('#nach_oben a').click(function () {
+                  $('body,html').animate({
+                    scrollTop: 0
+                  }, 800);
+                  return false;
+                });
+              });
+        
+            });
+          </script>
+        
+          <p id="nach_oben">
+            <a href="#top">nach Oben</a>
+          </p>
+</div>
 </body>
 
 </html>
