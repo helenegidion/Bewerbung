@@ -1,5 +1,5 @@
 body{
-    background: url("Bilder/feder.jpg") fixed;
+    background: url("feder.jpg") fixed;
     background-size: cover;
     
 }
@@ -68,4 +68,8 @@ body{
     
     
     
+  }
+
+  .card{
+    justify-content: center;
   }
